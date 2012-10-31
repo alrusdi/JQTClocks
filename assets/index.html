@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0">
+        <title>jQTouch &beta;</title>
+        <style type="text/css" media="screen">@import "css/jqtouch.css";</style>
+        <style type="text/css" media="screen">@import "css/jqt/theme.css";</style>
+        <script src="js/zepto.js"></script>
+        <script src="js/jqtouch.js"></script>
+        <link rel="stylesheet" href="css/clock.css" type="text/css" media="screen" charset="utf-8" />
+        <script src="js/clocks.js"></script>
+    </head>
+    <body>
+        <script type="text/plain" id="clock_template">
+            <div>
+                <div class="clock">
+                    <div class="hour"></div>
+                    <div class="min"></div>
+                    <div class="sec"></div>
+                </div>
+                <div class="rm" tz="" onclick="removeClock(this)">x</div>
+                <div class="city">GMT</div>
+                <div class="time">Time</div>
+            </div>
+        </script>
+        <div id="jqt">
+            <div id="home">
+                <div class="toolbar">
+                    <h1>Часы</h1>
+                    <a href="#info" class="button leftButton slide">Справка</a>
+                    <a href="#add" class="button add slide">+</a>
+                </div>
+                <div id="clocks"></div>
+            </div>
+            <div class="form" id="add">
+                <div class="toolbar">
+                    <h1>Добавить</h1>
+                    <a href="#home" id="cancel_btn" class="cancel slide">Назад</a>
+                </div>
+                    <ul class="rounded">
+                        <li><input autocomplete="off" type="text" id="label" name="Label" placeholder="Название"></li>
+                        <li><select autocomplete="off" name="timezone" id="timezone">
+                              <option value="-12.0">(GMT -12:00) Эниветок</option>
+                              <option value="-11.0">(GMT -11:00) Самоа</option>
+                              <option value="-10.0">(GMT -10:00) Гаваи</option>
+                              <option value="-9.0">(GMT -9:00) Аляска</option>
+                              <option value="-8.0">(GMT -8:00) Тихоокеанское</option>
+                              <option value="-7.0">(GMT -7:00) Горное время</option>
+                              <option value="-6.0">(GMT -6:00) Центральное время</option>
+                              <option value="-5.0">(GMT -5:00) Восточное время</option>
+                              <option value="-4.0">(GMT -4:00) Атлантика</option>
+                              <option value="-3.5">(GMT -3:30) Ньюфаундленд</option>
+                              <option value="-3.0">(GMT -3:00) Бразилия</option>
+                              <option value="-2.0">(GMT -2:00) Среднеатлантическое</option>
+                              <option value="-1.0">(GMT -1:00 hour) Азоры</option>
+                              <option value="0.0" selected>(GMT) Гринвич</option>
+                              <option value="1.0">(GMT +1:00 hour) Париж</option>
+                              <option value="2.0">(GMT +2:00) Калининград</option>
+                              <option value="3.0">(GMT +3:00) Москва</option>
+                              <option value="3.5">(GMT +3:30) Тегеран</option>
+                              <option value="4.0">(GMT +4:00) Абу Даби</option>
+                              <option value="4.5">(GMT +4:30) Кабул</option>
+                              <option value="5.0">(GMT +5:00) Екатеринбург</option>
+                              <option value="5.5">(GMT +5:30) Нью Дели</option>
+                              <option value="5.75">(GMT +5:45) Катманду</option>
+                              <option value="6.0">(GMT +6:00) Омск</option>
+                              <option value="7.0">(GMT +7:00) Красноярск/Бангкок</option>
+                              <option value="8.0">(GMT +8:00) Иркутск/Гонконг</option>
+                              <option value="9.0">(GMT +9:00) Якутск/Токио</option>
+                              <option value="9.5">(GMT +9:30) Аделаида</option>
+                              <option value="10.0">(GMT +10:00) Владивосток</option>
+                              <option value="11.0">(GMT +11:00) Магадан</option>
+                              <option value="12.0">(GMT +12:00) Фиджи</option>
+                        </select></li>
+                    </ul>
+                    <a style="margin: 10px;" id="add_clock_btn" class="whiteButton submit">Добавить часы</a>
+            </div>
+            <div id="info">
+                <div class="toolbar">
+                    <h1>Справка</h1>
+                    <a href="#home" class="cancel">Назад</a>
+                </div>
+                <div class="info">
+                    Русифицированая демка часиков проекта jQTouch на WebKit.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
