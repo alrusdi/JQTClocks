@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0">
+        <title>jQTClocks &beta;</title>
+        <link rel="stylesheet" href="file:///android_asset/css/jqtouch.css"/>
+        <link rel="stylesheet" href="file:///android_asset/css/jqt/theme.css"/>
+        <script src="file:///android_asset/js/zepto.js"></script>
+        <script src="file:///android_asset/js/jqtouch.js"></script>
+        <link rel="stylesheet" href="file:///android_asset/css/clock.css" type="text/css" media="screen" charset="utf-8" />
+        <script src="file:///android_asset/js/clocks.js"></script>
+    </head>
+    <body>
+        <script type="text/plain" id="clock_template">
+            <div>
+                <div class="clock">
+                    <div class="hour"></div>
+                    <div class="min"></div>
+                    <div class="sec"></div>
+                </div>
+                <div class="rm" tz="" onclick="removeClock(this)">x</div>
+                <div class="city">GMT</div>
+                <div class="time">Time</div>
+            </div>
+        </script>
+        <div id="jqt">
+            <div id="home">
+                <div class="toolbar">
+                    <h1>{{clocks}}</h1>
+                    <a href="#info" class="button leftButton slide">{{help}}</a>
+                    <a href="#add" class="button add slide">+</a>
+                </div>
+                <div id="clocks"></div>
+            </div>
+            <div class="form" id="add">
+                <div class="toolbar">
+                    <h1>{{add}}</h1>
+                    <a href="#home" id="cancel_btn" class="cancel slide">{{back}}</a>
+                </div>
+                    <ul class="rounded">
+                        <li><input autocomplete="off" type="text" id="label" name="Label" placeholder="{{title}}"></li>
+                        <li><select autocomplete="off" name="timezone" id="timezone">{{time_zones}}</select></li>
+                    </ul>
+                    <a style="margin: 10px;" id="add_clock_btn" class="whiteButton submit">{{add_clocks}}</a>
+            </div>
+            <div id="info">
+                <div class="toolbar">
+                    <h1>{{help}}</h1>
+                    <a href="#home" class="cancel">{{back}}</a>
+                </div>
+                <div class="info">
+                    {{help_text}}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

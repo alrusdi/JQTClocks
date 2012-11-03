@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">JQTouch clocks demo on WebKit!</string>
+    <string name="hello">JQTouch worldwide clocks demo in WebKit!</string>
     <string name="app_name">JQTClocks</string>
 
+    <string name="clocks">Clocks</string>
+    <string name="help">Help</string>
+    <string name="add">Add</string>
+    <string name="back">Back</string>
+    <string name="title">Title</string>
+    <string name="add_clocks">Add clocks</string>
+    <string name="help_text">JQTouch worldwide clocks demo in WebKit</string>
+    <string name="time_zones">
+        <![CDATA[
+        <option value="-12.0">(GMT -12:00) Eniwetok</option>
+        <option value="-11.0">(GMT -11:00) Samoa</option>
+        <option value="-10.0">(GMT -10:00) Hawaii</option>
+        <option value="-9.0">(GMT -9:00) Alaska</option>
+        <option value="-8.0">(GMT -8:00) Pacific Time</option>
+        <option value="-7.0">(GMT -7:00) Mountain Time</option>
+        <option value="-6.0">(GMT -6:00) Central Time</option>
+        <option value="-5.0">(GMT -5:00) Eastern Time</option>
+        <option value="-4.0">(GMT -4:00) Atlantic Time</option>
+        <option value="-3.5">(GMT -3:30) Newfoundland</option>
+        <option value="-3.0">(GMT -3:00) Brazil</option>
+        <option value="-2.0">(GMT -2:00) Mid-Atlantic</option>
+        <option value="-1.0">(GMT -1:00) Azores</option>
+        <option value="0.0" selected>(GMT) Western Europe Time</option>
+        <option value="1.0">(GMT +1:00) Paris</option>
+        <option value="2.0">(GMT +2:00) Kaliningrad</option>
+        <option value="3.0">(GMT +3:00) Baghdad</option>
+        <option value="3.5">(GMT +3:30) Tehran</option>
+        <option value="4.0">(GMT +4:00) Abu Dhabi</option>
+        <option value="4.5">(GMT +4:30) Kabul</option>
+        <option value="5.0">(GMT +5:00) Ekaterinburg</option>
+        <option value="5.5">(GMT +5:30) New Delhi</option>
+        <option value="5.75">(GMT +5:45) Kathmandu</option>
+        <option value="6.0">(GMT +6:00) Colombo</option>
+        <option value="7.0">(GMT +7:00) Bangkok</option>
+        <option value="8.0">(GMT +8:00) Hong Kong</option>
+        <option value="9.0">(GMT +9:00) Tokyo</option>
+        <option value="9.5">(GMT +9:30) Adelaide</option>
+        <option value="10.0">(GMT +10:00) Eastern Australia</option>
+        <option value="11.0">(GMT +11:00) Solomon Islands</option>
+        <option value="12.0">(GMT +12:00) Fiji</option>
+        ]]>
+    </string>
 </resources>
