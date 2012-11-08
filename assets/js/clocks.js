@@ -1,6 +1,6 @@
 var jQT = $.jQTouch({
-    icon: 'img/icon.png',
-    startupScreen: 'img/startup.png',
+    icon: 'file:///android_asset/img/icon.png',
+    startupScreen: 'file:///android_asset/img/startup.png',
     useAnimations: false
 });
 
